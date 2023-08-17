@@ -166,3 +166,21 @@ body  {
 .container .right .button:hover {
     background-image: linear-gradient(var(--LightStateBlue), var(--LightRoyalBlue));
 }
+@media only screen and (max-width: 420px) {
+    body {
+        align-items: start;
+    }
+    .container {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .container .left {
+        border-radius: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .container .left p {
+        max-width: 80%;
+        margin-bottom: .5rem;
+    }
+}
