@@ -1,8 +1,12 @@
 :root {
     --LightRed : hsl(0, 100%, 67%);
-    --OrengeyYellow : hsl(39, 100%, 56%);
+    --TransparentLightRed : hsla(0, 100%, 67%, .07);
+    --OrangeyYellow : hsl(39, 100%, 56%);
+    --TransparentOrangeyYellow : hsla(39, 100%, 56%, .07);
     --GreenTeal : hsl(166, 100%, 37%);
+    --TransparentGreenTeal : hsla(166, 100%, 37%, .07);
     --CobaltBlue : hsl(234, 85%, 45%);
+    --TransparentCobaltBlue : hsla(234, 85%, 45%, .07);
     /* GRADIENTS */
     --LightStateBlue : hsl(252, 100%, 67%);
     --LightRoyalBlue : hsl(241, 81%, 54%);
@@ -26,4 +30,139 @@
 }
 body  {
     font-family: var(--HankenGrotesk);
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    box-shadow: 10px 10px 25px var(--PaleBlue);
+    border-radius: 1.3rem;
+    display: flex;
+    max-width: 500px;
+}
+.container .left {
+    padding: 2rem;
+    flex: 1;
+}
+.container .right {
+    padding: 1.8rem;
+    flex: 1;
+}
+.container>.left {
+    background-image: linear-gradient( var(--LightStateBlue), var(--LightRoyalBlue));
+    border-radius: 1.3rem;
+    color: var(--PaleBlue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .left h4 {
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: .05rem;
+}
+.container .left .result {
+    background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin-block: 1.3rem;
+}
+.container .left .result h1 {
+    font-size: 3rem;
+}
+.container .left .result h6 {
+    font-weight: 300;
+    color: var(--LightLavender);
+}
+.container .left p {
+    font-weight: 200;
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--DarkGrayBlue);
+}
+.container .right .notes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    margin-block: 2rem;
+}
+.container .right .notes .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .7rem;
+    /* border: 1px solid var(--CobaltBlue); */
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+.container .right .notes .item:nth-child(1) {
+    background: var(--TransparentLightRed);
+}
+.container .right .notes .item:nth-child(2) {
+    background: var(--TransparentOrangeyYellow);
+}
+.container .right .notes .item:nth-child(3) {
+    background: var(--TransparentGreenTeal);
+}
+.container .right .notes .item:nth-child(4) {
+    background: var(--TransparentCobaltBlue);
+}
+.container .right .notes .item .description {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+}
+.container .right .notes .item:nth-child(1) .description {
+    color: var(--LightRed);
+}
+.container .right .notes .item:nth-child(2) .description {
+    color: var(--OrangeyYellow);
+}
+.container .right .notes .item:nth-child(3) .description {
+    color: var(--GreenTeal);
+}
+.container .right .notes .item:nth-child(4) .description {
+    color: var(--CobaltBlue);
+}
+.container .right .notes .item .description svg {
+    width: 1rem;
+    height: auto;
+}
+.container .right .notes .item .note span {
+    font-weight: 300;
+}
+.container .right .button {
+    text-decoration: none;
+    color: var(--PaleBlue);
+    font-size: .8rem;
+    width: 100%;
+    text-align: center;
+    padding-block: .7rem;
+    border-radius: 4rem;
+    transition: .5s ease;
+    background: var(--DarkGrayBlue);
+}
+.container .right .button:hover {
+    background-image: linear-gradient(var(--LightStateBlue), var(--LightRoyalBlue));
 }
