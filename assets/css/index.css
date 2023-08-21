@@ -149,7 +149,7 @@ body  {
     width: 1rem;
     height: auto;
 }
-.container .right .notes .item .note span {
+.container .right .notes .item .note span:nth-child(2) {
     font-weight: 300;
 }
 .container .right .button {
