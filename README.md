@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My frontend mentor Solution](https://www.frontendmentor.io/solutions/results-summary-component-nGQ27EZ2lF)
+- Live Site URL: [Results Summary - Fanantenana Emmanuel](https://manu3609.github.io/Results-summary-component/)
 
 ## My process
 
