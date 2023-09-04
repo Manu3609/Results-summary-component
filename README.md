@@ -7,6 +7,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [Frontend Mentor - Results Summary](#frontend-mentor---results-summary)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [Screenshot](#screenshot)
     - [The challenge](#the-challenge)
     - [Links](#links)
   - [My process](#my-process)
@@ -14,6 +15,10 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Author](#author)
 
 ## Overview
+
+### Screenshot
+
+![](./assets/images/Results-Summary-Fanantenana-Emmanuel.png.png)
 
 ### The challenge
 
