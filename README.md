@@ -18,7 +18,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./assets/images/Results-Summary-Fanantenana-Emmanuel.png.png)
+![](./assets/images/Results-Summary-Fanantenana-Emmanuel.png)
 
 ### The challenge
 
